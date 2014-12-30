@@ -12,7 +12,8 @@ p {
   float: right;
 }
 #container {
-  width: 80%;
+  width: 90%;
+  max-width: 900px;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.6);
 }
@@ -25,4 +26,12 @@ p {
 #person {
   color: #8c8c8c;
   font-size: 0.8em;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 1.5em;
+  }
 }
