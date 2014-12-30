@@ -15,7 +15,6 @@ p {
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.6);
 }
 #theater {
   /*background-color: rgba(255, 255, 255, 0.6);*/
@@ -32,6 +31,13 @@ p {
 
 @media screen and (max-width: 600px) {
   body {
-    font-size: 1.5em;
+    font-size: 2em;
+  }
+}
+
+/*Mobile Phones Landscape*/
+@media only screen and (max-device-width: 600px) and (orientation: landscape) {
+  body {
+    font-size: 2em;
   }
 }
