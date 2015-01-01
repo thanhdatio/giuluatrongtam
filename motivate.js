@@ -28,19 +28,22 @@ var quotes = {
   27: ["We are what we repeatedly do. Excellence, then, is not an act, but a habit.","Aristotle"],
   28: ["This above all: to thine ownself be true,\nAnd it must follow, as the night the day,\nThou canst not then be false to any man.","William Shakespeare"],
   29: ["It’s not the daily increase but daily decrease. Hack away at the unessential.","Bruce Lee"],
-  //30: ["",""],
+  30: ["Empty your mind, be formless, shapeless - like water ... Now water can flow or it can crash. Be water, my friend.","Bruce Lee"],
 };
-var timing = [600, 5000];
+var timing = [600, 5000, 800];
 /*var inDelayOut = function(){
   $(this).fadeIn(timing[0]).delay(timing[1]).fadeOut(timing[0]);
 }; revisit this */
 var loadQuotes = function(){
   var rndm = Math.floor((Math.random() * (Object.keys(quotes).length)) + 1);
+    $("#initial-right").remove();
     $("#quote").empty();
     $("#person").empty();
     $("#quote").append(quotes[rndm][0]).hide().fadeIn(timing[0]).delay(timing[1]).fadeOut(timing[0]);
+    $("#quote").append("<br><span class=\"smart-quotes\" id=\"smart-right\">&rdquo;</span>");
+
     if(quotes[rndm][1] != ""){
-      $("#person").append("– " + quotes[rndm][1]).hide().fadeIn(timing[0]).delay(timing[1]).fadeOut(timing[0]);
+      $("#person").append("<em>– " + quotes[rndm][1]).hide().delay(timing[2]).fadeIn(timing[0]).delay(timing[1]-timing[2]).fadeOut(timing[0]) + "</em>";
     }
 };
 $(document).ready(function(){

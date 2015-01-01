@@ -17,9 +17,8 @@ p {
   margin: 0 auto;
 }
 #theater {
-  /*background-color: rgba(255, 255, 255, 0.6);*/
   padding: 5px 30px;
-  margin-top: -40px;
+  margin-top: -65px;
   min-height: 200px;
 }
 #person {
