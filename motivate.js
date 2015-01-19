@@ -29,6 +29,8 @@ var quotes = {
   28: ["This above all: to thine ownself be true,\nAnd it must follow, as the night the day,\nThou canst not then be false to any man.","William Shakespeare"],
   29: ["It’s not the daily increase but daily decrease. Hack away at the unessential.","Bruce Lee"],
   30: ["Empty your mind, be formless, shapeless - like water ... Now water can flow or it can crash. Be water, my friend.","Bruce Lee"],
+  31: ["Successful people do what they have to do, whether they feel like it or not.",""],
+  32: ["when you don't create things, you become defined by your tastes rather than ability. your tastes only narrow & exclude people. so create.","_why"],
 };
 var timing = [600, 5000, 800];
 /*var inDelayOut = function(){
