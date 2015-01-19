@@ -45,7 +45,7 @@ var loadQuotes = function(){
     $("#quote").append("<br><span class=\"smart-quotes\" id=\"smart-right\">&rdquo;</span>");
 
     if(quotes[rndm][1] != ""){
-      $("#person").append("<em>– " + quotes[rndm][1]).hide().delay(timing[2]).fadeIn(timing[0]).delay(timing[1]-timing[2]).fadeOut(timing[0]) + "</em>";
+      $("#person").append("<em>– "+quotes[rndm][1]+"</em>").hide().delay(timing[2]).fadeIn(timing[0]).delay(timing[1]-timing[2]).fadeOut(timing[0]);
     }
 };
 $(document).ready(function(){
